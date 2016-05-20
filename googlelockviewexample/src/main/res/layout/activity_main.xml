@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:googlelockring="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wearespindle.googlelockviewexample.MainActivity"
+    android:background="@color/colorPrimary">
+
+    <com.wearespindle.googlelockring.GoogleLockRingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/google_lock_ring_view"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/googlelockringview_margin_bottom"
+        android:focusable="true"
+        android:gravity="center"
+        googlelockring:directionDescriptions="@array/snooze_dismiss_direction_descriptions"
+        googlelockring:feedbackCount="1"
+        googlelockring:glowRadius="@dimen/googlelockringview_glow_radius"
+        googlelockring:handleDrawable="@drawable/ic_alarm_alert_touch_handle"
+        googlelockring:innerRadius="@dimen/googlelockringview_inner_radius"
+        googlelockring:outerRadius="@dimen/googlelockringview_target_placement_radius"
+        googlelockring:outerRingDrawable="@drawable/ic_alarm_alert_outerring"
+        googlelockring:pointDrawable="@drawable/ic_lockscreen_glowdot"
+        googlelockring:snapMargin="@dimen/googlelockringview_snap_margin"
+        googlelockring:targetDescriptions="@array/snooze_dismiss_descriptions"
+        googlelockring:targetDrawables="@array/snooze_dismiss_drawables"
+        googlelockring:vibrationDuration="20"
+        />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Size of alarm alert outer ring. -->
+    <dimen name="lock_ring_outer_ring_diameter">270dip</dimen>
+
+    <!-- Should be 1/2 of outerring diameter. -->
+    <dimen name="lock_ring_target_placement_radius">135dip</dimen>
+
+    <dimen name="lock_ring_glow_radius">75dip</dimen>
+
+    <!-- Default distance beyond which LockRing snaps to the matching target -->
+    <dimen name="lock_ring_snap_margin">40dip</dimen>
+
+    <dimen name="lock_ring_inner_radius">15dip</dimen>
+    <dimen name="lock_ring_margin_bottom">-48dip</dimen>
+    <dimen name="lock_ring_margin_right">0dip</dimen>
+</resources>

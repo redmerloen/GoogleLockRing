@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:lock_ring="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wearespindle.spindlelockring.MainActivity">
+
+    <com.wearespindle.spindlelockring.library.LockRing
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/lock_ring"
+        android:focusable="true"
+        android:gravity="center"
+        lock_ring:glowRadius="@dimen/lock_ring_glow_radius"
+        lock_ring:handleDrawable="@drawable/ic_lock_ring_handle"
+        lock_ring:innerRadius="@dimen/lock_ring_inner_radius"
+        lock_ring:outerRadius="@dimen/lock_ring_target_placement_radius"
+        lock_ring:outerRingDrawable="@drawable/ic_lock_ring_outer_ring"
+        lock_ring:pointDrawable="@drawable/ic_lock_screen_glow_dot"
+        lock_ring:snapMargin="@dimen/lock_ring_snap_margin"
+        lock_ring:targetDescriptions="@array/lock_ring_descriptions"
+        lock_ring:targetDrawables="@array/lock_ring_drawables"
+        lock_ring:directionDescriptions="@array/lock_ring_direction_descriptions"
+        />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval" >
+            <size android:width="@dimen/lock_ring_button_size" android:height="@dimen/lock_ring_button_size" />
+            <solid android:color="@color/hangup_color" />
+        </shape>
+    </item>
+
+    <item>
+        <inset android:drawable="@drawable/ic_call_end_white"
+            android:insetRight="@dimen/lock_ring_button_inset"
+            android:insetTop="@dimen/lock_ring_button_inset"
+            android:insetLeft="@dimen/lock_ring_button_inset"
+            android:insetBottom="@dimen/lock_ring_button_inset" />
+    </item>
+</layer-list>
